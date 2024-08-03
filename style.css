@@ -246,3 +246,63 @@ button:hover {
 .footer-bottom p {
     color: white;
 }
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        display: none; /* Oculta o menu padrão */
+    }
+
+    nav ul.show {
+        display: flex; /* Exibe o menu quando ativado */
+    }
+
+    .logo img {
+        height: 40px; /* Ajuste o tamanho do logo para telas menores */
+    }
+
+    /* Botão de menu para dispositivos móveis */
+    .menu-toggle {
+        display: block;
+        cursor: pointer;
+    }
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 2rem;
+    color: #003366;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 50vh; /* Ajuste a altura para dispositivos móveis */
+}
+
+@media (max-width: 768px) {
+    .swiper-slide img {
+        height: 50vh; /* Ajuste a altura da imagem */
+    }
+}
+
+.section {
+    padding: 3rem 1rem; /* Reduzir o padding em telas menores */
+}
+
+.servicos-container, .clientes-container {
+    flex-direction: column; /* Ajuste para melhor visualização */
+    align-items: center;
+}
+
+.servico-item, .cliente-item {
+    max-width: 100%; /* Garantir que os itens não excedam a largura da tela */
+}
+
+h1, h2, h3 {
+    font-size: 1.5rem; /* Ajuste conforme necessário */
+}
+
+p {
+    font-size: 0.9rem; /* Ajuste conforme necessário */
+}
